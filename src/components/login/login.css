@@ -1,0 +1,85 @@
+.login{
+    background: url('../../assets/images/login.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.login form .connect-in{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.login form .connect-in span{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border: 1px solid #ddd;
+    padding: .5rem;
+    border-radius: 7px;
+}
+.login form .connect-in span img{
+    width: 2rem;
+}
+
+.login form .forms{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login form .forms span{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.login form .forms span label{
+    font-size: 15px;
+}
+
+.login form .forms span input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    outline-color: #7635dc;
+}
+
+.login form .forms span button{
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background: #7635dc;
+    color: #fff;
+    font-weight: 600;
+}
+
+.backHome{
+    border: 2px solid #ddd;
+    position: absolute;
+    top: 0;
+    left: -10rem;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    padding: .3rem;
+    border-radius: 7px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+.backHome svg{
+    width: 1rem;
+}

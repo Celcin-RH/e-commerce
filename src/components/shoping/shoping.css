@@ -1,0 +1,195 @@
+.shopping{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background: #00000069;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0;
+    z-index: -1;
+    transition: all .2s;
+}
+
+.content_shopping{
+    padding: 1rem;
+    width: fit-content;
+    height: 100vh;
+    background: #fff;
+    transform: translateX(100%);
+    transition: all .3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.content_shopping>.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content_shopping .top span svg{
+    width: 1.2rem;
+    cursor: pointer;
+}
+
+.content_shopping .center{
+    margin-top: 2rem;
+}
+
+.content_shopping .center .cards{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+    overflow-y: scroll;
+    height: 60vh;
+    padding-right: .7rem;
+}
+
+.content_shopping .center .cards::-webkit-scrollbar{
+    width: 5px !important;
+  }
+  
+  .content_shopping .center .cards::-webkit-scrollbar-track{
+    background: var(--white-color);
+}
+  
+.content_shopping .center .cards::-webkit-scrollbar-thumb{
+    background: #7635dc;
+}
+  
+
+
+.content_shopping .center .cards .card{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding: .3rem;
+    border-radius: 7px;
+    box-shadow: 0px 0px 20px #e6e5e5;
+    border: 1px solid #f0efef;
+
+}
+
+.content_shopping .center .cards .card .left{
+    display: flex;
+    align-items: center;    
+    gap: .5rem;
+}
+
+.content_shopping .center .cards .card .left img{
+    width: 5rem;
+}
+
+.content_shopping .center .cards .card .right{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.content_shopping .center .cards .card .right .action span:first-child,
+.content_shopping .center .cards .card .right .action span:last-child{
+    background: #FDC20B;
+    display: grid;
+    place-content: center;
+    padding: .3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.content_shopping .center .cards .card .right .action span svg{
+    width: .7rem;
+}
+
+.content_shopping .center .cards .card .right .action span svg path{
+    fill: #fff;
+}
+
+.content_shopping .center .cards .card .right .action{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.content_shopping .center .cards .card .right .cancel{
+    background: #ff4153;
+    display: grid;
+    place-content: center;
+    padding: .2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.content_shopping .center .cards .card .right .cancel svg {
+    width: .7rem;
+}
+
+.content_shopping .center .cards .card .right .cancel svg path{
+    fill: #fff;
+}
+
+.content_shopping>.bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: .5rem;
+    border-top: 1px solid #ddd;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+
+.content_shopping>.bottom>.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content_shopping>.bottom .payer button{
+    padding: .5rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.content_shopping>.bottom .payement .cards{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.content_shopping>.bottom .payement .cards .card{
+    border: 3px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem;
+    border-radius: 7px;
+    background: #fff;
+    gap: .2rem;
+    margin-top: 5px;
+    width: fit-content;
+}
+
+
+.content_shopping>.bottom .payement .card img{
+    width: 1rem;
+}
+
+.content_shopping>.bottom .payement .cards .card.active{
+    border: 3px solid #3CCF88;
+}
+
+
+/* ---- show ---- */
+
+.showShopping{
+    opacity: 1;
+    z-index: 100;
+}
+
+.show_left{
+    transform: translateX(0);
+}

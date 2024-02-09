@@ -1,0 +1,83 @@
+.review-client{
+    margin-bottom: 3rem;
+}
+
+.review-client .bottom{
+    margin-top: 5rem;
+}
+
+.review-client .bottom .cards>div{
+    /* border: 2px solid green; */
+    padding: 1rem;
+}
+
+.review-client .bottom .cards .card{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: .5rem;
+    background: #fff;
+    padding: 3rem 2rem;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.review-client .bottom .cards .card img.user{
+    width: 2rem;
+    position: absolute;
+    border-radius: 50%;
+    top: 1rem;
+    left: 1rem;
+}
+
+.review-client .bottom .cards .card img.quote{
+    width: 3.5rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    opacity: 0.2;
+}
+
+
+.slick-slide > div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.slick-list>.slick-track{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.next{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.review-client .bottom .cards .card img.user{
+    width: 5rem;
+}
+
+.review-client .bottom .cards .card .star{
+    display: flex;
+}
+
+.review-client .bottom .cards .card .star img{
+    width: 1rem;
+}
+
+
+/* ---- responsive ---- */
+
+@media (max-width:468px) {
+    .slick-prev, .slick-next{
+        display: none !important;
+    }
+}

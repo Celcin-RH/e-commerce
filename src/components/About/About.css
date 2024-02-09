@@ -1,0 +1,43 @@
+.About_ .top{
+    background: url('../../assets/images/about.png') no-repeat;
+    background-size: cover;
+    height: 50vh;
+    margin-top: 3rem;
+    background-position: 0px -25px;
+}
+
+.About_ .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+.About_ .bottom .card{
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+
+.About_ .bottom .card .right img{
+    width: 30rem;
+}
+
+.About_ .bottom .card .img{
+    position: relative;
+}
+
+.About_ .bottom .card .img::before{
+    content: "";
+    border: 2px solid #ddd;
+    left: 1.5rem;
+    top: 1.5rem;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+}

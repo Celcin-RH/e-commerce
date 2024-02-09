@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+@font-face {
+  font-family: 'NunitoSans';
+  src: url('./assets/fonts/Nunito/NunitoSans.ttf');
+}
+@font-face {
+  font-family: 'Jomhuria-Regular';
+  src: url('./assets/fonts/Jomhuria-Regular/Jomhuria-Regular.ttf');
+}
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url('./assets/fonts/Poppins/Poppins-Light.ttf');
+}
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('./assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+body{
+  font-family: 'NunitoSans';
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+li{
+  list-style-type: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb{
+  background: #7635dc;
+}
+
+@media (max-width:450px) {
+  .container{
+    width: 90%;
+  }
+}

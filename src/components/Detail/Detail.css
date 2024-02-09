@@ -1,0 +1,116 @@
+.Detail{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #00000053;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    opacity: 0;
+}
+
+.Detail .content_detail{
+    background: #fff;
+    width: 60%;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    position: relative;
+    transform: scale(.8);
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.Detail .content_detail span.cancel{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.Detail .content_detail span.cancel svg{
+    width: 1rem;
+}
+
+.Detail .right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Detail .right .star span img{
+    width: 1rem;
+}
+.Detail .right button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3rem;
+    border-radius: 8px;
+    width: 100%;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 26px;
+    font-size: 0.9375rem;
+    color: #ffffff;
+    background-color: #7635dc;
+    box-shadow: #7635dc3d 0px 8px 16px 0px;
+    margin-top: .5rem;
+    transition: all .2s ease-out;
+}
+
+.Detail .right button:hover{
+    text-decoration: none;
+    background-color: #431a9e;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+}
+
+.Detail .right .add_rmv{
+    background: #3CCF88;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    padding: .3rem;
+}
+
+.Detail .right .add_rmv svg{
+    width: .7rem;
+} 
+
+.Detail .right .add_rmv svg path{
+    fill: #fff;
+}
+
+
+.Detail .right .shar>div{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: .5rem;
+}
+
+.Detail .right .shar>div img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.Detail.showDetail{
+    opacity: 1;
+    z-index: 100;
+    transition-delay: 0s;
+}
+
+.content_detail.showContent{
+    transform: scale(1);
+}

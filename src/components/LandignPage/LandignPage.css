@@ -1,0 +1,12 @@
+.LandignPage{
+    overflow-x: hidden;
+    position: relative;
+}
+
+.LandignPage .landing-page{
+    background: url('../../assets/images/square-home.svg') no-repeat center;
+    background-size: cover;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 12rem;
+}

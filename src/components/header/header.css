@@ -1,0 +1,186 @@
+header{
+    padding: 1rem 0rem;
+    position: relative;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .left p{
+    font-weight: 1000;
+}
+
+header nav .center{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 14px;
+    position: relative;
+}
+
+header nav .center .close-rideaux{
+    width: 1.5rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+header nav .center a{
+    position: relative;
+}
+
+header nav .center a.active::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 40%;
+    background: #7635dc;
+    bottom: -4px;
+}
+
+header nav .center a::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background: #7635dc;
+    bottom: -4px;
+    transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+header nav .center a:hover::before{
+    width: 100%;
+}
+
+header nav .center .close-rideaux svg path,
+header nav .center .close-rideaux svg circle{
+    fill: #fff;
+}
+
+header nav .right{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+header nav .right span.register button{
+    padding: .5rem 1rem;
+    border: 1.5px solid #1d44df;
+    border-radius: 20px;
+    background: transparent;
+}
+
+header nav .right  small{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+header nav .right  small img{
+    width: 1.5rem;
+}
+
+header nav .right  small.market{
+    cursor: pointer;
+    position: relative;
+}
+
+header nav .right  small.market .notification{
+    position: absolute;
+    background: #FF4153;
+    color: #fff;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    top: -.3rem;
+    right: -.5rem;
+    font-size: 9px;
+}
+
+header nav .right small.market .notificationzeroMarket{
+    position: absolute;
+    background: #ddd;
+    color: #fff;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    top: -.3rem;
+    right: -.5rem;
+    font-size: 9px;
+}
+
+header nav .right  small.market svg{
+    width: 1.5rem;
+}
+
+header nav .right .rideaux{
+    transform: rotate(180deg);
+    display: none;
+}
+
+header nav .right .rideaux svg{
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+header nav .right .rideaux svg path{
+    fill: #000;
+}
+
+header nav.responsive-nav .center {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/* ---- responsive ---- */
+
+
+@media (max-width: 800px) {
+    header nav .center {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #E68D26;
+      padding: 1rem 1.5rem;
+      transform: translateX(-100vw);
+      opacity: 0;
+      transition: transform .3s cubic-bezier(1, 0, 0, 1);
+    }
+  
+    header nav .right .rideaux {
+      display: block;
+    }
+  
+    header nav.responsive-nav .center {
+      transform: none;
+    }
+
+    header nav .center .close-rideaux{
+        display: block;
+    }
+}
